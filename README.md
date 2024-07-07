@@ -8,8 +8,8 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-and-interactive-preview-element-using-js-gzNhXbJ44j)
+- Live Site URL: [Github Pages](https://sergrosu.github.io/article-preview-component/)
 
 ### Built with
 

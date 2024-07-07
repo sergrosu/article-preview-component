@@ -138,6 +138,7 @@ article {
   justify-self: end;
   position: relative;
   z-index: 100;
+  text-align: center;
 }
 .share-button-inverted {
   position: absolute;

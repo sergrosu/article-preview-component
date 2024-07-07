@@ -1,0 +1,171 @@
+:root {
+  --clr-neutral-100: hsl(0deg 0% 100%);
+  --clr-neutral-200: hsl(210, 46%, 95%);
+  --clr-neutral-400: hsl(212, 23%, 69%);
+  --clr-neutral-600: hsl(214, 17%, 51%);
+  --clr-neutral-800: hsl(217, 19%, 35%);
+
+  --fz-regular: 0.8125rem;
+  --fz-large: 1rem;
+  --fz-xl: 1.25rem;
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+
+/* josh comeau reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+html,
+body,
+main {
+  height: 100%;
+}
+
+/* utilities */
+.hidden {
+  display: none;
+}
+
+/* general style */
+
+body {
+  color: var(--clr-neutral-800);
+  background-color: var(--clr-neutral-200);
+  font-size: var(--fz-regular);
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--fw-regular);
+  font-style: normal;
+}
+article {
+  background-color: var(--clr-neutral-100);
+  margin: 4.625rem 1.5rem 0 1.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: 0 26%;
+}
+.content {
+  padding: 2.25rem 2rem 1.25rem 2rem;
+}
+.content > h1 {
+  font-size: var(--fz-large);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.25px;
+  line-height: 1.5;
+}
+.content > p {
+  margin-top: 0.75rem;
+  color: var(--clr-neutral-600);
+  font-weight: var(--fw-regular);
+  line-height: 1.538;
+  letter-spacing: 0.2px;
+}
+.grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 40px 3fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.grid .avatar {
+  border-radius: 2rem;
+  width: 40px;
+  height: 40px;
+}
+.name-block h2,
+.name-block h3 {
+  font-size: var(--fz-regular);
+  font-weight: var(--fw-bold);
+}
+.name-block h3 {
+  color: var(--clr-neutral-400);
+  font-weight: var(--fw-regular);
+}
+.share-button {
+  height: 2rem;
+  width: 2rem;
+  border: 0;
+  border-radius: 1rem;
+  background-color: var(--clr-neutral-200);
+  justify-self: end;
+}
+.share-button img {
+  margin: 0 auto;
+}
+
+@media (min-width: 40em) {
+  main {
+    align-content: center;
+    padding: 0 1.5rem;
+  }
+  article {
+    max-width: 45.625rem;
+    min-height: 17.5rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 285px 1fr;
+  }
+  .hero-img {
+    max-height: unset;
+    height: 100%;
+    object-fit: cover;
+    align-self: center;
+  }
+  .content {
+    padding: 2rem 2.5rem;
+  }
+  .content > h1 {
+    font-size: var(--fz-xl);
+    letter-spacing: 0.25px;
+    line-height: 1.4;
+  }
+  .grid {
+    margin-top: 1.25rem;
+  }
+}
